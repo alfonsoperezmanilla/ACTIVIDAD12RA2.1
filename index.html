@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="application-name" content="FORMULARIO"/>
+    <meta name="description" content="UTILIZACION DE JAVASCRIPT"/>
+    <meta name="keywords" content="CAMBIO DE COLOR DE FONDO, LLENADO DE FORMULARIO"/>
+    <meta name="author" content="ALFONSO PÉREZ MANILLA, alfonso_sonic10@outlook.com"/>
+    <meta name="copyrigth" content="CONALEP 153"/>
+    <title>FORMULARIO</title>
+    <link rel="stylesheet" href="estilo1.css">
+    <link rel="shortcut icon" href="1.png"/>
+    <script src="script1.js"></script>
+  </head>
+  <body id="cuerpo">
+    <header class="cabecera">
+      <h1 style="text-align:center">FORMULARIO</h1>
+    </header>
+    <section class="main">
+      <section class="articles">
+        <article id="cuerpo">
+          <img src="1.jpg" id="imagen1">
+          <form name="formulario1" id="formulario1" method="get" autocomplete="off"><br><br>
+            <p>NOMBRE: &nbsp;<input type="text" name="texto1" id="texto1" placeholder="Escribe tu nombre" autofocus></p>
+            <br>
+            <br>
+            <p>APELLIDO PATERNO: &nbsp;<input type="text" name="texto2" id="texto2" placeholder="Escribe tu apellido"></p>
+            <br>
+            <br>
+            <p>APELLIDO MATERNO: &nbsp;<input type="text" name="texto3" id="texto3" placeholder="Escribe tu apellido"></p>
+            <br>
+            <br>
+            <p>GENERO: &nbsp;<input type="tel" name="genero" id="genero1" list="generos1" placeholder="Elige tu genero"></p>
+            <datalist id="generos1">
+              <option value="MASCULINO" label="  GENERO M"></option>
+              <option value="FEMENINO" label="  GENERO F"></option>
+            </datalist>
+            <br>
+            <br>
+            <p>EDAD: &nbsp;<input type="range" name="edad" id="edad1" min="0" max="100" list="tickmarks"><output> 0 a 100 a.</output>
+            <datalist id="tickmarks">
+              <option value="0"></option>
+              <option value="5"></option>
+              <option value="10"></option>
+              <option value="15"></option>
+              <option value="20"></option>
+              <option value="25"></option>
+              <option value="30"></option>
+              <option value="35"></option>
+              <option value="40"></option>
+              <option value="45"></option>
+              <option value="50"></option>
+              <option value="55"></option>
+              <option value="60"></option>
+              <option value="65"></option>
+              <option value="70"></option>
+              <option value="75"></option>
+              <option value="80"></option>
+              <option value="85"></option>
+              <option value="90"></option>
+              <option value="95"></option>
+              <option value="100"></option>
+            </datalist></p>
+            <br>
+            <p>COLOR DE FONDO: &nbsp;<input type="color" name="color1" id="color1" onchange="document.getElementById('cuerpo').style.backgroundColor= this.value;"></p>
+            <br>
+          </form>
+          <button id="boton" onclick="mensaje()">ENVIAR</button>
+          <button id="boton1" onclick="limpiar()">LIMPIAR</button>
+        </article>
+      </section>
+  </body>
+  <footer>
+    <div class="container-footer">
+      <div class="footer">
+        <div class="copyright">
+          © 2018-2019 Todos los Derechos Reservados | <a>ALFONSO PEREZ MANILLA CONALEP 153 TEZIUTLAN</a>
+        </div>  
+      </div>
+    </div>
+  </footer>
+</html>
